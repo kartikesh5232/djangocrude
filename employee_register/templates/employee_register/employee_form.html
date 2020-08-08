@@ -1,0 +1,14 @@
+{% extends "employee_register/base.html" %}
+
+
+{% block content %}
+<form action="" method="POST" autocomplete="off">  
+    {% csrf_token %}
+    
+    {{form}}
+<button type="submit" class="btn btn-primary">Submit</button>
+<a href="{% url 'employee_list' %}">Go Back to List</a>
+</form>
+
+
+{% endblock content %}
